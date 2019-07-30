@@ -33,11 +33,11 @@
         /*********
          Switcher Panel ToolTip
          **********/
-        $(function () {
+        /*$(function () {
             $('#age,#age1,#age2').tooltip({
                 position: {
-                    my: "right-30 top",
-                    at: "center top",
+                    my: "right-30 left",
+                    at: "left",
                     using: function (position, feedback) {
                         $(this).css(position);
                         $("<div>")
@@ -47,7 +47,7 @@
                     }
                 }
             });
-        });
+        });*/
 
     });
 

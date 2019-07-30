@@ -21,6 +21,7 @@
     padding: 23px 30px 43px 35px;
     right: -364px;
     box-shadow: -5px 0px 15px -1px rgba(0, 0, 0, 0.05);
+    height: 100%;
 }
 
 .switcher_open {
@@ -95,12 +96,13 @@
 .switZone_title {
     position: absolute;
     right: 100%;
-    top: 45%;
+    top: calc(50% - 50px);
     border-bottom-left-radius: 3px;
     border-top-left-radius: 3px;
     background-color: rgb(255, 255, 255);
     box-shadow: -5px 0px 15px -1px rgba(0, 0, 0, 0.05);
     padding: 10px 10px 10px 0;
+    transform: translateY(-50%);
 }
 
 .switZone_title a {
@@ -113,6 +115,10 @@
     color: #333333;
     text-decoration: none;
     padding: 12px;
+}
+.switZone_title a:hover:after {
+    opacity: 1;
+    visibility: visible;
 }
 
 .header_switcher_style .switcher-title h5 {
@@ -220,6 +226,9 @@
     text-transform: uppercase;
     border-radius: 3px;
     transition: all 0.5s linear;
+    position: fixed;
+    z-index: 9999;
+    width: 288px;
 }
 
 .button-pr span {
@@ -373,40 +382,32 @@
 }
 
 /****** Title ************/
-.switZone_title .setting::after {
-    content: 'Theme Setting';
+.switZone_title a:after{
     position: absolute;
     z-index: -1;
-    top: 9px;
-    left: -125px;
+    top: 5px;
+    right: 70px;
     color: #555;
+    white-space: nowrap;
     font-size: 14px;
     letter-spacing: .6px;
     background: #fff;
-    padding: 15px 25px;
+    padding: 8px 25px;
     opacity: 0;
     border-radius: 4px;
     transition: .5s;
-    box-shadow: 0px 2px 6px 0px rgba(100, 100, 100, 0.3);
+    box-shadow: 0px 2px 6px 0px rgba(100, 100, 100, 0.1);
     visibility: hidden;
+}
+.switZone_title .setting::after {
+    content: 'Theme Setting';
 }
 
 .switZone_title .doc::after {
     content: 'Documentation';
-    position: absolute;
-    z-index: -1;
-    top: 9px;
-    left: -124px;
-    color: #555;
-    font-size: 14px;
-    letter-spacing: .6px;
-    background: #fff;
-    padding: 15px 25px;
-    opacity: 0;
-    border-radius: 4px;
-    transition: .5s;
-    box-shadow: 0px 2px 6px 0px rgba(100, 100, 100, 0.3);
-    visibility: hidden;
+}
+.switZone_title .doc.life:after{
+    content: 'Help';
 }
 
 @media (max-width:991px){

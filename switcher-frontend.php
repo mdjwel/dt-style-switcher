@@ -1,4 +1,5 @@
 <?php
+global $wp;
 // Menu Width
 $demo_menu_width = isset($_GET['menu']) ? $_GET['menu'] : '';
 $is_boxed = $demo_menu_width == 'boxed' ? 'active' : '';
@@ -14,13 +15,13 @@ $is_menu_right = $demo_menu_align == 'menu_right' ? 'active' : '';
 <div class="color_switcher_zone">
 
     <div class="switZone_title">
-        <a href="#" class="settingBtn setting" id="age" title="Toggle">
+        <a href="#" class="settingBtn setting" id="age">
             <i class="icon_cog" aria-hidden="true"></i>
         </a>
-        <a href="http://docs.droitthemes.com/docs/karfixr-wordpress-theme/" target="blank" class="doc settingBtn setting" title="Documentation">
+        <a href="http://docs.droitthemes.com/docs/karfixr-wordpress-theme/" target="blank" class="doc settingBtn setting">
             <i class="icon_document_alt" aria-hidden="true"></i>
         </a>
-        <a href="https://droitthemes.ticksy.com" target="blank" class="doc settingBtn life" title="Support">
+        <a href="https://droitthemes.ticksy.com" target="blank" class="doc settingBtn life">
             <i class="icon_lifesaver" aria-hidden="true"></i>
         </a>
         <!--<a href="#" id="age2" class="purches" title="Purchase"><i class="icon_cart_alt" aria-hidden="true"></i></a>-->
@@ -33,7 +34,7 @@ $is_menu_right = $demo_menu_align == 'menu_right' ? 'active' : '';
                 <div class="switcher-title">
                     <h5 class="no-border"> <?php esc_html_e('Menu Width', 'dt-style-switcher') ?> </h5>
                     <div class="dtss_btns dtss_row">
-                        <a href="<?php echo esc_url(home_url('/')) ?>?menu=boxed" class="dtss_col_3 dtss_btn dtss_btn_outline <?php echo esc_attr($is_boxed); ?>">
+                        <a href="<?php echo esc_url(home_url($wp->request)) ?>?menu=boxed" class="dtss_col_3 dtss_btn dtss_btn_outline <?php echo esc_attr($is_boxed); ?>">
                             <?php esc_html_e('Boxed', 'dt-style-switcher') ?>
                         </a>
                         <a href="<?php echo esc_url(home_url('/')) ?>?menu=wide" class="dtss_col_3 dtss_btn dtss_btn_outline <?php echo esc_attr($is_wide) ?>">
@@ -50,13 +51,13 @@ $is_menu_right = $demo_menu_align == 'menu_right' ? 'active' : '';
                 <div class="switcher-title">
                     <h5> <?php esc_html_e('Menu Alignment ', ''); ?></h5>
                     <div class="dtss_btns dtss_row">
-                        <a href="<?php echo esc_url(home_url('/')) ?>?menu_align=menu_center" class="dtss_col_3 dtss_btn dtss_btn_outline <?php echo esc_attr($is_menu_center) ?>">
+                        <a href="<?php echo esc_url(home_url($wp->request)) ?>?menu_align=menu_center" class="dtss_col_3 dtss_btn dtss_btn_outline <?php echo esc_attr($is_menu_center) ?>">
                             <?php esc_html_e(' Center', 'dt-style-switcher') ?>
                         </a>
-                        <a href="<?php echo esc_url(home_url('/')) ?>?menu_align=menu_left" class="dtss_col_3 dtss_btn dtss_btn_outline <?php echo esc_attr($is_menu_left) ?>">
+                        <a href="<?php echo esc_url(home_url($wp->request)) ?>?menu_align=menu_left" class="dtss_col_3 dtss_btn dtss_btn_outline <?php echo esc_attr($is_menu_left) ?>">
                             <?php esc_html_e(' Left', 'dt-style-switcher') ?>
                         </a>
-                        <a href="<?php echo esc_url(home_url('/')) ?>?menu_align=menu_right" class="dtss_col_3 dtss_btn dtss_btn_outline <?php echo esc_attr($is_menu_right) ?>">
+                        <a href="<?php echo esc_url(home_url($wp->request)) ?>?menu_align=menu_right" class="dtss_col_3 dtss_btn dtss_btn_outline <?php echo esc_attr($is_menu_right) ?>">
                             <?php esc_html_e(' Right', 'dt-style-switcher') ?>
                         </a>
                     </div>

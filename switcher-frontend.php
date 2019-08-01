@@ -15,7 +15,7 @@ $is_menu_right = $demo_menu_align == 'menu_right' ? 'active' : '';
 <div class="color_switcher_zone">
 
     <div class="switZone_title">
-        <a href="#" class="settingBtn setting" id="age">
+        <a href="#" class="dt_open_settings settingBtn setting" id="age">
             <i class="icon_cog" aria-hidden="true"></i>
         </a>
         <a href="http://docs.droitthemes.com/docs/karfixr-wordpress-theme/" target="blank" class="doc settingBtn setting">
@@ -70,6 +70,15 @@ $is_menu_right = $demo_menu_align == 'menu_right' ? 'active' : '';
                     <div class="dtss_row demos">
                         <a href="https://saasland.droitthemes.com/" class="dtss_col_2 demo_link" title="Saasland Design Studio Demo">
                             <img src="https://droitthemes.com/wp/saasland/wp-content/uploads/2019/04/Prototyping_Tool.jpg" alt="Saasland Design Studio Demo">
+                        </a>
+                        <a href="https://saasland2.droitthemes.com/home-hosting/" class="dtss_col_2 demo_link" title="Saasland Hosting Demo">
+                            <img src="https://saasland.droitthemes.com/wp-content/uploads/2019/07/hosting.jpg" alt="Saasland Hosting Demo">
+                        </a>
+                        <a href="https://saasland2.droitthemes.com/home-pos/" class="dtss_col_2 demo_link" title="Saasland POS Demo">
+                            <img src="https://saasland.droitthemes.com/wp-content/uploads/2019/07/pos.jpg" alt="Saasland POS Demo">
+                        </a>
+                        <a href="https://saasland2.droitthemes.com/home-erp/" class="dtss_col_2 demo_link" title="Saasland ERP Demo">
+                            <img src="https://saasland.droitthemes.com/wp-content/uploads/2019/07/erp.jpg" alt="Saasland ERP Demo">
                         </a>
                         <a href="https://saasland.droitthemes.com/home-payment-processing/" class="dtss_col_2 demo_link" title="Saasland Payment Processing Demo">
                             <img src="https://droitthemes.com/wp/saasland/wp-content/uploads/2019/04/home16.jpg" alt="Saasland Payment Processing Demo">

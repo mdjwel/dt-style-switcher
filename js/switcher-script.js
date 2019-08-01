@@ -9,7 +9,7 @@
         if ($(".color_switcher_zone").length > 0) {
             //switcher
             var switchs = true;
-            $(".settingBtn").on("click", function (e) {
+            $(".dt_open_settings").on("click", function (e) {
                 e.preventDefault();
                 if (switchs) {
                     $(this).addClass("active");

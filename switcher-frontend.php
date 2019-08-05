@@ -18,7 +18,7 @@ $is_menu_right = $demo_menu_align == 'menu_right' ? 'active' : '';
         <a href="#" class="dt_open_settings settingBtn setting" id="age">
             <i class="icon_cog" aria-hidden="true"></i>
         </a>
-        <a href="http://docs.droitthemes.com/docs/karfixr-wordpress-theme/" target="blank" class="doc settingBtn setting">
+        <a href="https://docs.droitthemes.com/docs/saasland-wordpress-documentation/" target="blank" class="doc settingBtn setting">
             <i class="icon_document_alt" aria-hidden="true"></i>
         </a>
         <a href="https://droitthemes.ticksy.com" target="blank" class="doc settingBtn life">
@@ -37,10 +37,10 @@ $is_menu_right = $demo_menu_align == 'menu_right' ? 'active' : '';
                         <a href="<?php echo esc_url(home_url($wp->request)) ?>?menu=boxed" class="dtss_col_3 dtss_btn dtss_btn_outline <?php echo esc_attr($is_boxed); ?>">
                             <?php esc_html_e('Boxed', 'dt-style-switcher') ?>
                         </a>
-                        <a href="<?php echo esc_url(home_url('/')) ?>?menu=wide" class="dtss_col_3 dtss_btn dtss_btn_outline <?php echo esc_attr($is_wide) ?>">
+                        <a href="<?php echo esc_url(home_url($wp->request)) ?>?menu=wide" class="dtss_col_3 dtss_btn dtss_btn_outline <?php echo esc_attr($is_wide) ?>">
                             <?php esc_html_e(' Wide', 'dt-style-switcher') ?>
                         </a>
-                        <a href="<?php echo esc_url(home_url('/')) ?>?menu=full_width" class="dtss_col_3 dtss_btn dtss_btn_outline <?php echo esc_attr($is_full_width) ?>">
+                        <a href="<?php echo esc_url(home_url($wp->request)) ?>?menu=full_width" class="dtss_col_3 dtss_btn dtss_btn_outline <?php echo esc_attr($is_full_width) ?>">
                             <?php esc_html_e('Full Width', 'dt-style-switcher'); ?>
                         </a>
                     </div>

@@ -6,10 +6,10 @@ There are available some pre-styled tools for showcasing your design, features v
 
 # Markup
 dt-style-switcher uses a series of containers, rows, and columns to layout and align content. It’s built with flexbox and is fully responsive. Below is an example and an in-depth look at how the grid comes together.
-``
+```
 <div class="dtss_row demos">
   <a href="#" class="dtss_col_2 demo_link" title="Rogan Saas Landing Demo">
     <img src="home.jpg" alt="Rogan Saas Landing Demo">
   </a>
 </div>
-``
+```
